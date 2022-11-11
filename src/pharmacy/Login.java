@@ -27,8 +27,8 @@ public class Login {
         //should be removed later
 
 
-        txtUsername.setText("admin");
-        txtPassword.setText("123456");
+        //txtUsername.setText("admin");
+        //txtPassword.setText("123456");
 
 
         btnLogin.addActionListener(new ActionListener() {
