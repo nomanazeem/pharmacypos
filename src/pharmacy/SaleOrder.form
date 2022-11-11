@@ -1,0 +1,768 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="pharmacy.SaleOrder">
+  <grid id="27dc6" binding="mainPanel" layout-manager="GridLayoutManager" row-count="4" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="800" height="600"/>
+    </constraints>
+    <properties>
+      <minimumSize width="800" height="600"/>
+      <preferredSize width="800" height="600"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <grid id="8055c" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="none" title="Add To Cart">
+          <font name="Tahoma" size="12" style="1"/>
+        </border>
+        <children>
+          <grid id="8da1a" layout-manager="GridLayoutManager" row-count="4" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <scrollpane id="2d812">
+                <constraints>
+                  <grid row="0" column="0" row-span="4" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="f79da" class="javax.swing.JTable" binding="tblProduct">
+                    <constraints/>
+                    <properties/>
+                  </component>
+                </children>
+              </scrollpane>
+              <component id="eb3ec" class="javax.swing.JButton" binding="btnRemove">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Tahoma" size="12" style="1"/>
+                  <label value="Remove"/>
+                  <text value="Remove"/>
+                </properties>
+              </component>
+              <component id="86d8" class="javax.swing.JButton" binding="btnMinus">
+                <constraints>
+                  <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Tahoma" size="12" style="1"/>
+                  <label value="-"/>
+                  <text value="-"/>
+                </properties>
+              </component>
+              <component id="999f8" class="javax.swing.JButton" binding="btnPlus">
+                <constraints>
+                  <grid row="1" column="2" row-span="2" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Tahoma" size="12" style="1"/>
+                  <label value="+"/>
+                  <text value="+"/>
+                </properties>
+              </component>
+              <vspacer id="1b7b1">
+                <constraints>
+                  <grid row="2" column="1" row-span="2" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </vspacer>
+              <vspacer id="81597">
+                <constraints>
+                  <grid row="3" column="2" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </vspacer>
+            </children>
+          </grid>
+          <grid id="f016e" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <grid id="c959b" layout-manager="GridLayoutManager" row-count="9" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="c784e" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <font name="Tahoma" size="12" style="1"/>
+                      <text value="Customer :"/>
+                    </properties>
+                  </component>
+                  <component id="dce3b" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <font name="Tahoma" size="12" style="1"/>
+                      <text value="Total :"/>
+                    </properties>
+                  </component>
+                  <component id="ac507" class="javax.swing.JLabel" binding="txtTotalAmount">
+                    <constraints>
+                      <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <font name="Tahoma" size="12" style="1"/>
+                      <text value="0.00"/>
+                    </properties>
+                  </component>
+                  <component id="2452a" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <font name="Tahoma" size="12" style="1"/>
+                      <text value="Total Discount :"/>
+                    </properties>
+                  </component>
+                  <component id="263d6" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <font name="Tahoma" size="12" style="1"/>
+                      <text value="Balance :"/>
+                    </properties>
+                  </component>
+                  <component id="9b354" class="javax.swing.JLabel" binding="txtBalance">
+                    <constraints>
+                      <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <font name="Tahoma" size="12" style="1"/>
+                      <text value="0.00"/>
+                    </properties>
+                  </component>
+                  <component id="de510" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <font name="Tahoma" size="12" style="1"/>
+                      <text value="Total Qty :"/>
+                    </properties>
+                  </component>
+                  <component id="b7d4c" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <font name="Tahoma" size="18" style="1"/>
+                      <text value="BILL :"/>
+                    </properties>
+                  </component>
+                  <component id="17b9d" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <font name="Tahoma" size="18" style="1"/>
+                      <text value="PAY :"/>
+                    </properties>
+                  </component>
+                  <component id="7fe26" class="javax.swing.JTextField" binding="txtBill">
+                    <constraints>
+                      <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <font name="Tahoma" size="18" style="1"/>
+                      <text value="0"/>
+                    </properties>
+                  </component>
+                  <component id="2976c" class="javax.swing.JTextField" binding="txtPay">
+                    <constraints>
+                      <grid row="6" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <font name="Tahoma" size="18" style="1"/>
+                      <text value="0"/>
+                    </properties>
+                  </component>
+                  <component id="36360" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="7" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <font name="Tahoma" size="12" style="1"/>
+                      <text value="Comments :"/>
+                    </properties>
+                  </component>
+                  <component id="99af" class="javax.swing.JTextField" binding="txtComments">
+                    <constraints>
+                      <grid row="7" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <font name="Tahoma" size="12" style="1"/>
+                      <text value=""/>
+                    </properties>
+                  </component>
+                  <component id="da46d" class="javax.swing.JComboBox" binding="cboCustomer">
+                    <constraints>
+                      <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <font name="Tahoma" size="12" style="1"/>
+                    </properties>
+                  </component>
+                  <component id="78f79" class="javax.swing.JTextField" binding="txtDiscountValue">
+                    <constraints>
+                      <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <enabled value="false"/>
+                      <font name="Tahoma" size="12" style="1"/>
+                      <text value="0"/>
+                    </properties>
+                  </component>
+                  <component id="a3222" class="javax.swing.JLabel" binding="txtTotalQty">
+                    <constraints>
+                      <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <font name="Tahoma" size="12" style="1"/>
+                      <text value="0"/>
+                    </properties>
+                  </component>
+                  <component id="49ccd" class="javax.swing.JButton" binding="btnSaveAndPrint">
+                    <constraints>
+                      <grid row="8" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <font name="Tahoma" size="12" style="1"/>
+                      <icon value="pharmacy/img/print.png"/>
+                      <label value="Pay &amp; Print"/>
+                      <text value="Pay &amp;&amp;&amp; Print"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+              <vspacer id="a377e">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </vspacer>
+            </children>
+          </grid>
+        </children>
+      </grid>
+      <grid id="b1b03" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="none" title="Search Product">
+          <font name="Tahoma" size="12" style="1"/>
+        </border>
+        <children>
+          <grid id="c35ef" layout-manager="GridLayoutManager" row-count="1" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="2" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="61e02" class="javax.swing.JTextField" binding="txtQty">
+                <constraints>
+                  <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                    <minimum-size width="100" height="-1"/>
+                    <preferred-size width="100" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <font name="Tahoma" size="12" style="1"/>
+                  <text value="0"/>
+                </properties>
+              </component>
+              <component id="958c5" class="javax.swing.JButton" binding="btnAddToCart">
+                <constraints>
+                  <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Tahoma" size="12" style="1"/>
+                  <icon value="pharmacy/img/cart-small.png"/>
+                  <label value="Add to cart"/>
+                  <text value="Add to cart"/>
+                </properties>
+              </component>
+              <component id="30ba9" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Tahoma" size="12" style="1"/>
+                  <text value="QTY :"/>
+                </properties>
+              </component>
+              <component id="ff4f4" class="javax.swing.JComboBox" binding="cboProduct" custom-create="true">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="500" height="-1"/>
+                    <preferred-size width="500" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties/>
+              </component>
+            </children>
+          </grid>
+          <grid id="18ce9" layout-manager="GridLayoutManager" row-count="4" column-count="10" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+            <border type="etched"/>
+            <children>
+              <component id="d0501" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Tahoma" size="12" style="1"/>
+                  <text value="Name :"/>
+                </properties>
+              </component>
+              <component id="69803" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Tahoma" size="12" style="1"/>
+                  <text value="Formulation :"/>
+                </properties>
+              </component>
+              <component id="47a36" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Tahoma" size="12" style="1"/>
+                  <text value="Formula :"/>
+                </properties>
+              </component>
+              <component id="952d5" class="javax.swing.JLabel" binding="txtName">
+                <constraints>
+                  <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Tahoma" size="12" style="1"/>
+                  <text value="0"/>
+                </properties>
+              </component>
+              <component id="8ce4a" class="javax.swing.JLabel" binding="txtFormulation">
+                <constraints>
+                  <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Tahoma" size="12" style="1"/>
+                  <text value="0"/>
+                </properties>
+              </component>
+              <component id="b91fd" class="javax.swing.JLabel" binding="txtFormula">
+                <constraints>
+                  <grid row="2" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Tahoma" size="12" style="1"/>
+                  <text value="0"/>
+                </properties>
+              </component>
+              <component id="e394a" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="0" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Tahoma" size="12" style="1"/>
+                  <text value="Strength :"/>
+                </properties>
+              </component>
+              <component id="88111" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="1" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Tahoma" size="12" style="1"/>
+                  <text value="Pack Size :"/>
+                </properties>
+              </component>
+              <component id="e94fb" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="2" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Tahoma" size="12" style="1"/>
+                  <text value="Pack Sale Price :"/>
+                </properties>
+              </component>
+              <component id="5594d" class="javax.swing.JLabel" binding="txtStrength">
+                <constraints>
+                  <grid row="0" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Tahoma" size="12" style="1"/>
+                  <text value="0"/>
+                </properties>
+              </component>
+              <component id="ffbc2" class="javax.swing.JLabel" binding="txtPackSize">
+                <constraints>
+                  <grid row="1" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Tahoma" size="12" style="1"/>
+                  <text value="0"/>
+                </properties>
+              </component>
+              <component id="f6a45" class="javax.swing.JLabel" binding="txtPackSalePrice">
+                <constraints>
+                  <grid row="2" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Tahoma" size="12" style="1"/>
+                  <text value="0.00"/>
+                </properties>
+              </component>
+              <component id="53885" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="0" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Tahoma" size="12" style="1"/>
+                  <text value="Item Stock Qty :"/>
+                </properties>
+              </component>
+              <component id="23255" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="1" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Tahoma" size="12" style="1"/>
+                  <text value="Item Sale Price :"/>
+                </properties>
+              </component>
+              <component id="84764" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="2" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Tahoma" size="12" style="1"/>
+                  <text value="Item Discount % :"/>
+                </properties>
+              </component>
+              <component id="2fb53" class="javax.swing.JLabel" binding="txtItemStockQty">
+                <constraints>
+                  <grid row="0" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Tahoma" size="12" style="1"/>
+                  <text value="0"/>
+                </properties>
+              </component>
+              <component id="67755" class="javax.swing.JLabel" binding="txtItemSalePrice">
+                <constraints>
+                  <grid row="1" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Tahoma" size="12" style="1"/>
+                  <text value="0.00"/>
+                </properties>
+              </component>
+              <component id="9e671" class="javax.swing.JLabel" binding="txtItemDiscountPercent">
+                <constraints>
+                  <grid row="2" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Tahoma" size="12" style="1"/>
+                  <text value="0"/>
+                </properties>
+              </component>
+              <component id="6e589" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="0" column="8" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Tahoma" size="12" style="1"/>
+                  <text value="Expiry :"/>
+                </properties>
+              </component>
+              <component id="6eb74" class="javax.swing.JLabel" binding="txtExpiry">
+                <constraints>
+                  <grid row="0" column="9" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Tahoma" size="12" style="1"/>
+                  <text value="0"/>
+                </properties>
+              </component>
+              <component id="3b42b" class="javax.swing.JLabel" binding="txtItemPriceAfterDiscount">
+                <constraints>
+                  <grid row="1" column="9" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Tahoma" size="12" style="1"/>
+                  <text value="0"/>
+                </properties>
+              </component>
+              <component id="8651e" class="javax.swing.JLabel" binding="txtItemDiscountValue">
+                <constraints>
+                  <grid row="2" column="9" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Tahoma" size="12" style="1"/>
+                  <text value="0"/>
+                </properties>
+              </component>
+              <component id="ce7f5" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="1" column="8" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Tahoma" size="12" style="1"/>
+                  <text value="Price After Discount :"/>
+                </properties>
+              </component>
+              <component id="78622" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="2" column="8" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Tahoma" size="12" style="1"/>
+                  <text value="Item Discount Value :"/>
+                </properties>
+              </component>
+              <component id="acd9" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Tahoma" size="12" style="1"/>
+                  <text value="Product Id :"/>
+                </properties>
+              </component>
+              <component id="84aa9" class="javax.swing.JLabel" binding="txtProductId">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Tahoma" size="12" style="1"/>
+                  <text value="0"/>
+                </properties>
+              </component>
+              <component id="467ba" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Tahoma" size="12" style="1"/>
+                  <text value="Bar Code :"/>
+                </properties>
+              </component>
+              <component id="588" class="javax.swing.JLabel" binding="txtBarCode">
+                <constraints>
+                  <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Tahoma" size="12" style="1"/>
+                  <text value="0"/>
+                </properties>
+              </component>
+              <component id="1cec0" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Tahoma" size="12" style="1"/>
+                  <text value="Company :"/>
+                </properties>
+              </component>
+              <component id="70fcd" class="javax.swing.JLabel" binding="txtCompany">
+                <constraints>
+                  <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Tahoma" size="12" style="1"/>
+                  <text value="0"/>
+                </properties>
+              </component>
+              <component id="33b3c" class="javax.swing.JLabel" binding="txtTotalItemAmount">
+                <constraints>
+                  <grid row="3" column="9" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Tahoma" size="12" style="1"/>
+                  <foreground color="-13561614"/>
+                  <text value="0.00"/>
+                </properties>
+              </component>
+              <component id="2eb5b" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="3" column="8" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Tahoma" size="12" style="1"/>
+                  <foreground color="-13561614"/>
+                  <text value="Total Amount :"/>
+                </properties>
+              </component>
+              <component id="4fd05" class="javax.swing.JLabel" binding="txtTotalItemQty">
+                <constraints>
+                  <grid row="3" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Tahoma" size="12" style="1"/>
+                  <foreground color="-13561614"/>
+                  <text value="0.00"/>
+                </properties>
+              </component>
+              <component id="e4941" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="3" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Tahoma" size="12" style="1"/>
+                  <foreground color="-13561614"/>
+                  <text value="Total Qty  :"/>
+                </properties>
+              </component>
+              <component id="8b18b" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Tahoma" size="12" style="1"/>
+                  <text value="Pack Purchase Price :"/>
+                </properties>
+              </component>
+              <component id="dc0aa" class="javax.swing.JLabel" binding="txtPackPurchasePrice">
+                <constraints>
+                  <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Tahoma" size="12" style="1"/>
+                  <text value="0.00"/>
+                </properties>
+              </component>
+              <component id="84bf2" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="3" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Tahoma" size="12" style="1"/>
+                  <text value="Item Purchase Price :"/>
+                </properties>
+              </component>
+              <component id="b8c7e" class="javax.swing.JLabel" binding="txtItemPurchasePrice">
+                <constraints>
+                  <grid row="3" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Tahoma" size="12" style="1"/>
+                  <text value="0.00"/>
+                </properties>
+              </component>
+              <component id="9c755" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="3" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Tahoma" size="12" style="1"/>
+                  <text value="Item Profit :"/>
+                </properties>
+              </component>
+              <component id="f8f52" class="javax.swing.JLabel" binding="txtItemProfit">
+                <constraints>
+                  <grid row="3" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Tahoma" size="12" style="1"/>
+                  <text value="0.00"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+        </children>
+      </grid>
+      <grid id="a4cad" layout-manager="GridLayoutManager" row-count="1" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="none" title="Invoice">
+          <font name="Tahoma" size="12" style="1"/>
+        </border>
+        <children>
+          <component id="8fd7c" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Tahoma" size="12" style="1"/>
+              <text value="Invoice No :"/>
+            </properties>
+          </component>
+          <hspacer id="d85a5">
+            <constraints>
+              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </hspacer>
+          <component id="231a3" class="javax.swing.JLabel" binding="txtInvoiceNo">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Tahoma" size="12" style="1"/>
+              <requestFocusEnabled value="false"/>
+              <text value="0"/>
+            </properties>
+          </component>
+          <component id="647a9" class="javax.swing.JButton" binding="btnNewOrder">
+            <constraints>
+              <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Tahoma" size="12" style="1"/>
+              <icon value="pharmacy/img/update.png"/>
+              <label value="New Order"/>
+              <text value="New Order"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <vspacer id="b279c">
+        <constraints>
+          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+    </children>
+  </grid>
+</form>

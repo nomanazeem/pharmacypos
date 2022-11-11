@@ -1,0 +1,24 @@
+<component name="libraryTable">
+  <library name="test">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/out/production/fgeha/install/test/stax2-api-4.2.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/out/production/fgeha/install/test/itext-2.1.7.js10.jar!/" />
+      <root url="jar://$PROJECT_DIR$/out/production/fgeha/install/test/jackson-annotations-2.13.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/out/production/fgeha/install/test/jackson-databind-2.13.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/out/production/fgeha/install/test/bcprov-jdk15on-1.70.jar!/" />
+      <root url="jar://$PROJECT_DIR$/out/production/fgeha/install/test/commons-collections-3.2.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/out/production/fgeha/install/test/jfreechart-1.0.19.jar!/" />
+      <root url="jar://$PROJECT_DIR$/out/production/fgeha/install/test/commons-collections4-4.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/out/production/fgeha/install/test/bcutil-jdk15on-1.70.jar!/" />
+      <root url="jar://$PROJECT_DIR$/out/production/fgeha/install/test/jackson-core-2.13.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/out/production/fgeha/install/test/woodstox-core-6.2.7.jar!/" />
+      <root url="jar://$PROJECT_DIR$/out/production/fgeha/install/test/jcommon-1.0.23.jar!/" />
+      <root url="jar://$PROJECT_DIR$/out/production/fgeha/install/test/commons-beanutils-1.9.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/out/production/fgeha/install/test/ecj-3.21.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/out/production/fgeha/install/test/jackson-dataformat-xml-2.13.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/out/production/fgeha/install/test/commons-digester-2.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

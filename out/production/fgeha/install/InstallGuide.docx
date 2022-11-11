@@ -1,0 +1,11 @@
+Pharmacy management software
+
+1. Install JDK 1.8 or later
+2. Install Mysql Server and client (Mysql work bench)
+3. Create Database named 'pharmacypos'
+4. Go to project directory/src/pharmacy/db.java file
+5. con = DriverManager.getConnection("jdbc:mysql://localhost:{port}/{dbname}","{dbusername}","{dbpassword}");
+6. set port, dbname, dbusername, dbpassword
+7. run db script pharmacy_data
+8. default admin username and password are 'admin', '123456'
+9. Jar file (executable file) out/product/pharmacy/pharmacy.jar

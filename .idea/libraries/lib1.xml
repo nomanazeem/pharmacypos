@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="lib1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/out/production/fgeha/lib/commons-logging-1.1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/out/production/fgeha/lib/jcalendar-1.2.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/out/production/fgeha/lib/commons-digester-2.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/out/production/fgeha/lib/commons-collections4-4.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/out/production/fgeha/lib/jasperreports-6.20.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/out/production/fgeha/lib/mysql-connector-java-8.0.30.jar!/" />
+      <root url="jar://$PROJECT_DIR$/out/production/fgeha/lib/flatlaf-2.6.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
